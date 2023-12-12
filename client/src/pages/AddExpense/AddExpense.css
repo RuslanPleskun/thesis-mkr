@@ -1,0 +1,105 @@
+.AddExpense .topRadio {
+    display: flex;
+    justify-content: center;
+    margin: 23px 0px;
+}
+
+.AddExpense .item label {
+    display: block;
+    margin-bottom: 6px;
+    font-display: 15px;
+    font-weight: bold !important;
+}
+
+.AddExpense .item {
+    margin-bottom: 23px;
+}
+
+.AddExpense .ant-input,
+.AddExpense .ant-select {
+    width: 100%;
+}
+
+.AddExpense .tags .ant-tag {
+    height: 32px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.AddExpense .leftContainer .leftContainerTop {
+    background-color: #1B2850;
+    padding: 23px;
+    color: white;
+    margin-bottom: 23px;
+}
+
+.AddExpense .leftContainerBottom {
+    padding: 43px;
+}
+
+.AddExpense .btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.AddExpense .ant-checkbox-wrapper {
+    display: flex !important;
+    justify-content: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+.AddExpense .btnContainer>div {
+    width: 100% !important;
+    max-width: 800px;
+}
+
+.AddExpense button {
+    width: 100%;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #2ea673 !important;
+    border-radius: 23px;
+    font-size: 17px;
+    color: #fff !important;
+    border: 0;
+}
+
+.AddExpense .rightContainer {
+    padding: 23px;
+    margin-top: 20px;
+}
+
+.AddExpense .ant-radio-button-wrapper {
+    background: transparent !important;
+    color: white !important;
+}
+
+.AddExpense .ant-radio-button-wrapper-checked {
+    background: white !important;
+    color: black !important;
+    border-color: white !important;
+}
+
+@media (max-width: 600px) {
+
+    .leftContainerBottom,
+    .rightContainer {
+        padding: 20px !important;
+        /* padding-bottom: 0px !important; */
+    }
+
+    .leftContainerBottom, .leftContainerBottom>.item {
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .rightContainer {
+        padding-top: 0px !important;
+        margin-top: 0px !important;
+    }
+}

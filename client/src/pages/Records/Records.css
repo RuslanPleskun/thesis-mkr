@@ -1,0 +1,7 @@
+.Records tbody td {
+    text-transform: capitalize;
+}
+
+.Records .ant-table {
+    overflow-x: auto;
+}

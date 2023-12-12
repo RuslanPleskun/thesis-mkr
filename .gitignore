@@ -1,0 +1,10 @@
+# Config Files
+*.ini
+.DS_Store
+/**/__MACOSX/
+
+# npm
+/node_modules/
+/**/node_modules/
+client/node_modules
+client/build

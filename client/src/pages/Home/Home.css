@@ -1,0 +1,166 @@
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url("../../assets/bg.jpg"); */
+    background-size: 200px 200px !important;
+}
+
+.Home>div {
+    width: 100%;
+    max-width: 500px !important;
+}
+
+.Home header {
+    margin-top: 60px;
+}
+
+.Home header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.Home .balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home .balance h4 {
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.Home .balance h4:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Home .balance .anticon {
+    font-size: 28px;
+}
+
+.Home .budgetCont {
+    background-color: white;
+    border-radius: 10px;
+    margin: 23px 0px;
+    padding: 23px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px -1px 27px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 3px -1px 27px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px -1px 27px 3px rgba(0, 0, 0, 0.15);
+}
+
+.Home .budgetCont>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home .budgetCont .border {
+    width: 10px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.Home .budgetChartCont {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    padding: 23px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px -1px 27px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 3px -1px 27px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px -1px 27px 3px rgba(0, 0, 0, 0.15);
+}
+
+.Home .budgetChartCont .cash {
+    width: 100%;
+}
+
+.Home .budgetChartCont .anticon {
+    font-size: 28px;
+}
+
+.Home .iconCont button {
+    border: 2px solid #2ea673;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.Home .budgetChartCont h6 {
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.Home .budgetChartCont .bank>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Home .budgetChartCont small {
+    opacity: 0.3 !important;
+}
+
+.Home a .anticon {
+    color: #2ea673;
+}
+
+
+@media (max-width: 600px) {
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .chartContainer {
+        width: 170px !important;
+        height: 170px;
+    }
+
+    .Home {
+        padding: 0px 10px;
+    }
+
+    .Home header {
+        margin-top: 30px;
+    }
+
+    .Home header>div:first-of-type::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 243px;
+        width: 100%;
+        z-index: -10;
+        background-color: #2ea673;
+        color: white !important;
+        padding: 10px;
+    }
+
+    .Home .balance h4 {
+        color: white;
+    }
+
+    .Home .balance .anticon {
+        color: white;
+    }
+
+    .Home header>div:first-of-type h4 {
+        color: white !important;
+    }
+
+    .Home .budgetCont {
+        margin-bottom: 60px;
+    }
+
+    .g2-html-annotation {
+        top: 71px !important;
+        font-size: 12px !important;
+        opacity: .7 !important;
+        line-height: 16px !important;
+    }
+}

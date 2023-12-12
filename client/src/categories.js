@@ -1,0 +1,22 @@
+export const categoriesArray = [
+    { label: "Food & Drinks", value: "Food & Drinks", color: Math.floor(Math.random() * 16777215).toString(16) },
+    { label: "Shopping", value: "Shopping" },
+    { label: "Housing", value: "Housing" },
+    { label: "Transportation", value: "Transportation" },
+    { label: "Vehicle", value: "Vehicle" },
+    { label: "Life & Entertainment", value: "Life & Entertainment" },
+    { label: "Electronics", value: "Electronics" },
+    { label: "Insurance", value: "Insurance" },
+    { label: "Tax", value: "Tax" },
+    { label: "Investments", value: "Investments" },
+    { label: "Income", value: "Income" },
+    { label: "Telephone", value: "Telephone" },
+    { label: "Sport", value: "Sport" },
+    { label: "Health", value: "Health" },
+    { label: "Education", value: "Education" },
+    { label: "Baby", value: "Baby" },
+    { label: "Beauty", value: "Beauty" },
+    { label: "Gift", value: "Gift" },
+    { label: "Pet", value: "Pet" },
+    { label: "Others", value: "Others" }
+];

@@ -1,0 +1,93 @@
+.profile .headlist {
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif !important;
+}
+
+.profile .header {
+    background-color: #1B2850;
+    padding: 23px;
+    color: white;
+    margin-bottom: 23px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 43px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile {
+    padding-bottom: 100px !important;
+}
+
+.profile label {
+    color: black;
+    display: block;
+}
+
+.profile input,
+.profile select {
+    color: black;
+    border: 1px solid #2ea673;
+    border-radius: 4px;
+    width: 100%;
+    padding: 6px;
+}
+
+.profile .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .inner>div {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile .inner form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile button {
+    background-color: #2ea673;
+    width: 100%;
+    color: white;
+    border-radius: 23px;
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 23px !important;
+}
+
+.DatePicker input {
+    border: navajowhite;
+}
+
+.logout {
+    position: absolute;
+    right: 10px;
+}
+
+.logout .anticon {
+    font-size: 28px;
+    color: white;
+    margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+    .profile .inner {
+        padding: 23px;
+    }
+}
