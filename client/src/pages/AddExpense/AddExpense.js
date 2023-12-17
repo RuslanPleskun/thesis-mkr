@@ -101,7 +101,7 @@ const AddExpense = () => {
                                         <Row gutter={[16, 16]}>
                                             <Col xs={24} md={12}>
                                                 <label>Amount</label>
-                                                <InputNumber className='w-100' onChange={(val) => handleChange("amount", val)} min={1} value={expenseData.amount} />
+                                                <InputNumber required className='w-100' onChange={(val) => handleChange("amount", val)} min={1} value={expenseData.amount} />
                                             </Col>
                                             <Col xs={24} md={12}>
                                                 <label>Currency</label>

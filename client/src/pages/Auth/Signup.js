@@ -63,38 +63,38 @@ export const Signup = (props) => {
                                 <label>Full Name</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-user"></i></span>
-                                    <input name='fullName' type="text" className="form-control" placeholder="Full Name" onChange={handleChange} />
+                                    <input required name='fullName' type="text" className="form-control" placeholder="Full Name" onChange={handleChange} />
                                 </div>
                             </div>
                             <div className='item'>
                                 <label>Email</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} />
+                                    <input required name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} />
                                 </div>
                             </div>
                             <div className='item'>
                                 <label>Username</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                                    <input name='username' type="text" className="form-control" placeholder="Username" onChange={handleChange} />
+                                    <input required name='username' type="text" className="form-control" placeholder="Username" onChange={handleChange} />
                                 </div>
                             </div>
                             <div className='item'>
                                 <label>Password</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
-                                    <input name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} />
+                                    <input required name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} />
                                 </div>
                             </div>
                             <div className='item'>
-                                <label>Retype Password</label>
+                                <label>Confirm Password</label>
                                 <div className="input-group">
                                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
-                                    <input name='confirm' type="password" className="form-control" placeholder="Retype Password" onChange={handleChange} />
+                                    <input required name='confirm' type="password" className="form-control" placeholder="Confirm Password" onChange={handleChange} />
                                 </div>
                             </div>
-                            <button className='btn' type="submit">Signup</button>
+                            <button className='btn' type="submit">Sign Up</button>
                         </form>
                         <div className='end-text'>
                             <div>Already have an account?</div>

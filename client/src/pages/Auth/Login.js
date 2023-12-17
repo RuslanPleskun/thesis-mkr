@@ -23,7 +23,8 @@ export const Login = (props) => {
   }
 
 
-  const submitHandler = async () => {
+  const submitHandler = async (e) => {
+    e.preventDefault();
     window.scrollTo(0, 0);
     setLoading(true);
     await axios.post(`${process.env.REACT_APP_BACKEND_URL}/users/login`, { email, password }).then(async (res) => {
@@ -41,7 +42,7 @@ export const Login = (props) => {
       setLoading(false);
       console.log(err);
       Error(err.message)
-  })
+    })
   };
 
 
@@ -61,14 +62,14 @@ export const Login = (props) => {
                   <label>Email</label>
                   <div className="input-group">
                     <span className="input-group-text" id="basic-addon1"><i className="fa-regular fa-envelope"></i></span>
-                    <input name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} />
+                    <input required name='email' type="text" className="form-control" placeholder="Email" onChange={handleChange} />
                   </div>
                 </div>
                 <div className='item'>
                   <label>Password</label>
                   <div className="input-group">
                     <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-lock"></i></span>
-                    <input name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} />
+                    <input required name='password' type="password" className="form-control" placeholder="Password" onChange={handleChange} />
                   </div>
                 </div>
                 <button className='btn' type="submit">Login</button>
@@ -77,7 +78,7 @@ export const Login = (props) => {
           <div className='end-text'>
             <div>Don't have an account?</div>
             <Link to="/signup">
-              <b className='fw-bold'>Register</b>
+              <b className='fw-bold'>Sign Up</b>
             </Link>
           </div>
         </div>
